@@ -7,7 +7,44 @@
 //
 
 #import <Foundation/Foundation.h>
+//@class XXMainHeaderModel;
+//@class XXMainHeaderBodyOfContentlist;
+#import "XXMainHeaderModel.h"
 
 @interface XXMainHeaderViewModel : NSObject
+/**
+ *  message信号 -- success(数据更新成功) error(数据更新失败)
+ */
+@property (nonatomic, strong) NSString *message;
+
+/**
+ *  全部数据
+ */
+@property (nonatomic, strong) XXMainHeaderModel *mainHeaderModel;
+
+/**
+ *  内容数组
+ */
+@property (nonatomic, strong) NSArray *mainHeaderBodyOfContentArray;
+
+
+/**
+ *  当前下标对应的数据模型
+ */
+@property (nonatomic, strong) XXMainHeaderBodyOfContentlist *indexNumberItem;
+
+/**
+ 得到单个数据模型
+
+ @param indexNumber 列表中的下标
+ @return 内容模型
+ */
+- (XXMainHeaderBodyOfContentlist *)getmMainHeaderBodyOfContentArrayOfobjectIndex:(int)indexNumber;
+
+
+/**
+ *  网络请求数据源
+ */
+- (void)getPostMainHeaderViewSource;
 
 @end

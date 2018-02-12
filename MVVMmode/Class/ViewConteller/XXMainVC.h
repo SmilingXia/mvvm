@@ -6,8 +6,8 @@
 //  Copyright © 2018年 cn.xia. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface XXMainVC : ViewController
+@interface XXMainVC : UIViewController
 
 @end

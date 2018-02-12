@@ -7,8 +7,13 @@
 //
 
 #import "XXMainVC.h"
+#import "XXMainHeaderViewModel.h"
+#import "XXMainHeaderView.h"
 
 @interface XXMainVC ()
+
+@property (nonatomic, strong) XXMainHeaderView          *mainHeaderView;
+@property (nonatomic, strong) XXMainHeaderViewModel     *headerViewModel;
 
 @end
 
@@ -16,22 +21,64 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.headerViewModel = [[XXMainHeaderViewModel alloc] init];
+    [self loadUI];
+    [self setupKVO];
+    [self loadDataSource];
+}
+
+- (void)loadUI{
+    self.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.mainHeaderView = [[XXMainHeaderView alloc] init];
+    [self.view addSubview:self.mainHeaderView];
+    self.mainHeaderView.layer.cornerRadius  = 10;
+    self.mainHeaderView.clipsToBounds       = YES;
+    self.mainHeaderView.backgroundColor     = XXCOLOR(99, 99, 99);
+    [self.mainHeaderView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(70);
+        make.left.mas_equalTo(20);
+        make.right.mas_equalTo(-20);
+        make.height.mas_equalTo(100);
+    }];
+}
+
+- (void)setupKVO{
+    [self.headerViewModel addObserver:self forKeyPath:@"message" options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:nil];
+}
+
+- (void)loadDataSource{
+    [self.headerViewModel getPostMainHeaderViewSource];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"message"]) {
+        if ([self.headerViewModel.message isEqualToString:@"success"]) {
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                self.mainHeaderView.backgroundColor     = XXCOLOR(0, 125, 255);
+                [self updateHeaderViewSource];
+            });
+        }else{
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                self.mainHeaderView.backgroundColor     = XXCOLOR(99, 99, 99);
+            });
+        }
+    }
+}
+
+- (void)updateHeaderViewSource{
+    self.mainHeaderView.titleName  = [self.headerViewModel getmMainHeaderBodyOfContentArrayOfobjectIndex:0].title;
+    self.mainHeaderView.contentString  = [self.headerViewModel getmMainHeaderBodyOfContentArrayOfobjectIndex:0].text;
+    self.mainHeaderView.timeString  = [self.headerViewModel getmMainHeaderBodyOfContentArrayOfobjectIndex:0].ct;
+    [self.mainHeaderView updateViewSource];
+}
+
+- (void)dealloc{
+    [self.headerViewModel removeObserver:self forKeyPath:@"message"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

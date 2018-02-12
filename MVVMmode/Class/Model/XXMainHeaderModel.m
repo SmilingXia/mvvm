@@ -11,3 +11,30 @@
 @implementation XXMainHeaderModel
 
 @end
+
+
+@implementation XXMainHeaderBody
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"contentlist" : @"XXMainHeaderBodyOfContentlist"};
+}
+
+@end
+
+
+@implementation XXMainHeaderBodyOfContentlist
+
+- (NSString *)getContentlistTitle{
+    return self.title;
+}
+
+- (NSString *)getContentlistContent{
+    return self.text;
+}
+
+- (NSString *)getContentlistCt{
+    return self.ct;
+}
+
+@end
+
