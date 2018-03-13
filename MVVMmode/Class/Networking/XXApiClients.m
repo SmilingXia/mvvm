@@ -48,4 +48,23 @@
 }
 
 
+- (void)getFukushimaFunnyPictureSuccess:(ReturnSuccess)success
+                            ErrorString:(ReturnError)errorString{
+    
+    NSString *path = XX_LHD_GXTP_URL;
+    [self httpPost:CLOUDAPI_HTTP
+              host:XX_HOST_URL
+              path:path
+        pathParams:nil
+   completionBlock:^(NSData *data, NSURLResponse *response, NSError *error) {
+       if (data == nil || data.length < 1) {
+           NSLog(@"错误了，请查看error");
+           return errorString(@"获取数据失败");
+       }
+       NSDictionary *dataDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+       success(dataDict);
+   }];
+}
+
+
 @end

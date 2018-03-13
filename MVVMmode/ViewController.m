@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XXMainVC.h"
+#import "XXLaiFuKushimaVC.h"
 
 @interface ViewController ()
 
@@ -38,8 +39,11 @@
 }
 
 - (void)gotoVC{
-    XXMainVC *mainvc = [[XXMainVC alloc] init];
-    [self.navigationController pushViewController:mainvc animated:YES];
+//    XXMainVC *mainvc = [[XXMainVC alloc] init];
+//    [self.navigationController pushViewController:mainvc animated:YES];
+    
+    XXLaiFuKushimaVC *vc = [[XXLaiFuKushimaVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

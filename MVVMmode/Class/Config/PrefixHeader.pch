@@ -19,9 +19,9 @@
 #import <AFNetworking/AFNetworking.h>
 #import "XXConstant.h"
 #import "XXConstantNL.h"
-//#import <XXNetworking/XXNetworking.h>
 #import "XXApiClients.h"
 #import <MJExtension/MJExtension.h>
+#import "XXViewCallbackProtocol.h"
 
 #endif
 

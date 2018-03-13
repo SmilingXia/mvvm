@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1643491D205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643491C205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m */; };
+		16434920205282D800DDEE9C /* XXLaiFuKushimaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643491F205282D800DDEE9C /* XXLaiFuKushimaVC.m */; };
+		16434924205288BC00DDEE9C /* XXLaiFuKushimaTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16434923205288BC00DDEE9C /* XXLaiFuKushimaTC.m */; };
+		167EFAA72057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAA62057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m */; };
+		167EFAAD2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAAC2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m */; };
+		167EFAB02057DED500163215 /* XXLaiFuShowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAAF2057DED500163215 /* XXLaiFuShowImageView.m */; };
+		167EFAB32057DFB700163215 /* XXLaiFuShowImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAB22057DFB700163215 /* XXLaiFuShowImageViewModel.m */; };
 		2E321250202C5A9700DC0BA5 /* XXApiClients.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32124F202C5A9700DC0BA5 /* XXApiClients.m */; };
 		2E321253202C62E000DC0BA5 /* XXBaseApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E321251202C62E000DC0BA5 /* XXBaseApiClient.m */; };
 		2E80AB2E20315F9D008494D2 /* XXMainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E80AB2D20315F9D008494D2 /* XXMainHeaderView.m */; };
@@ -41,6 +48,21 @@
 
 /* Begin PBXFileReference section */
 		0AF2856087C0F2F2261D54E3 /* Pods-MVVMmode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMmode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMmode/Pods-MVVMmode.release.xcconfig"; sourceTree = "<group>"; };
+		1643491B205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFukushimaFunnyPicture.h; sourceTree = "<group>"; };
+		1643491C205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFukushimaFunnyPicture.m; sourceTree = "<group>"; };
+		1643491E205282D800DDEE9C /* XXLaiFuKushimaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaVC.h; sourceTree = "<group>"; };
+		1643491F205282D800DDEE9C /* XXLaiFuKushimaVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaVC.m; sourceTree = "<group>"; };
+		16434922205288BC00DDEE9C /* XXLaiFuKushimaTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaTC.h; sourceTree = "<group>"; };
+		16434923205288BC00DDEE9C /* XXLaiFuKushimaTC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaTC.m; sourceTree = "<group>"; };
+		167EFAA52057A5BE00163215 /* XXLaiFuKushimaTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaTableViewModel.h; sourceTree = "<group>"; };
+		167EFAA62057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaTableViewModel.m; sourceTree = "<group>"; };
+		167EFAAB2057DE3300163215 /* XXLaiFuKushimaShowImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaShowImageVC.h; sourceTree = "<group>"; };
+		167EFAAC2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaShowImageVC.m; sourceTree = "<group>"; };
+		167EFAAE2057DED500163215 /* XXLaiFuShowImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuShowImageView.h; sourceTree = "<group>"; };
+		167EFAAF2057DED500163215 /* XXLaiFuShowImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuShowImageView.m; sourceTree = "<group>"; };
+		167EFAB12057DFB700163215 /* XXLaiFuShowImageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuShowImageViewModel.h; sourceTree = "<group>"; };
+		167EFAB22057DFB700163215 /* XXLaiFuShowImageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuShowImageViewModel.m; sourceTree = "<group>"; };
+		167EFAB52057E42300163215 /* XXViewCallbackProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXViewCallbackProtocol.h; sourceTree = "<group>"; };
 		2E32124E202C5A9700DC0BA5 /* XXApiClients.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXApiClients.h; sourceTree = "<group>"; };
 		2E32124F202C5A9700DC0BA5 /* XXApiClients.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXApiClients.m; sourceTree = "<group>"; };
 		2E321251202C62E000DC0BA5 /* XXBaseApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBaseApiClient.m; sourceTree = "<group>"; };
@@ -100,6 +122,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164349212052887000DDEE9C /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				16434922205288BC00DDEE9C /* XXLaiFuKushimaTC.h */,
+				16434923205288BC00DDEE9C /* XXLaiFuKushimaTC.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		1643492520528C8600DDEE9C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		167EFAB42057E2C300163215 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				167EFAB52057E42300163215 /* XXViewCallbackProtocol.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		2E8C9206202BE39400BC89C2 = {
 			isa = PBXGroup;
 			children = (
@@ -158,10 +204,13 @@
 		2E8C9244202BE5BC00BC89C2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				167EFAB42057E2C300163215 /* Delegate */,
 				2E8C924A202BFA7900BC89C2 /* Config */,
 				2E8C9248202BE63D00BC89C2 /* Networking */,
-				2E8C9247202BE60600BC89C2 /* ViewModel */,
 				2E8C9246202BE5F500BC89C2 /* Model */,
+				2E8C9247202BE60600BC89C2 /* ViewModel */,
+				164349212052887000DDEE9C /* TableView */,
+				1643492520528C8600DDEE9C /* TableViewCell */,
 				2E8C9249202BE64B00BC89C2 /* View */,
 				2E8C9245202BE5E700BC89C2 /* ViewConteller */,
 			);
@@ -173,6 +222,10 @@
 			children = (
 				2E8C924E202C223100BC89C2 /* XXMainVC.h */,
 				2E8C924F202C223100BC89C2 /* XXMainVC.m */,
+				1643491E205282D800DDEE9C /* XXLaiFuKushimaVC.h */,
+				1643491F205282D800DDEE9C /* XXLaiFuKushimaVC.m */,
+				167EFAAB2057DE3300163215 /* XXLaiFuKushimaShowImageVC.h */,
+				167EFAAC2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m */,
 			);
 			path = ViewConteller;
 			sourceTree = "<group>";
@@ -182,6 +235,8 @@
 			children = (
 				2E8C9251202C2BA000BC89C2 /* XXMainHeaderModel.h */,
 				2E8C9252202C2BA000BC89C2 /* XXMainHeaderModel.m */,
+				1643491B205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.h */,
+				1643491C205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +246,10 @@
 			children = (
 				2E8C9254202C2BBF00BC89C2 /* XXMainHeaderViewModel.h */,
 				2E8C9255202C2BBF00BC89C2 /* XXMainHeaderViewModel.m */,
+				167EFAA52057A5BE00163215 /* XXLaiFuKushimaTableViewModel.h */,
+				167EFAA62057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m */,
+				167EFAB12057DFB700163215 /* XXLaiFuShowImageViewModel.h */,
+				167EFAB22057DFB700163215 /* XXLaiFuShowImageViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +270,8 @@
 			children = (
 				2E80AB2C20315F9D008494D2 /* XXMainHeaderView.h */,
 				2E80AB2D20315F9D008494D2 /* XXMainHeaderView.m */,
+				167EFAAE2057DED500163215 /* XXLaiFuShowImageView.h */,
+				167EFAAF2057DED500163215 /* XXLaiFuShowImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -437,9 +498,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E321253202C62E000DC0BA5 /* XXBaseApiClient.m in Sources */,
+				167EFAB02057DED500163215 /* XXLaiFuShowImageView.m in Sources */,
 				2E8C9217202BE39500BC89C2 /* ViewController.m in Sources */,
+				16434920205282D800DDEE9C /* XXLaiFuKushimaVC.m in Sources */,
+				16434924205288BC00DDEE9C /* XXLaiFuKushimaTC.m in Sources */,
+				167EFAA72057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m in Sources */,
 				2E8C9222202BE39500BC89C2 /* main.m in Sources */,
+				167EFAB32057DFB700163215 /* XXLaiFuShowImageViewModel.m in Sources */,
+				167EFAAD2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m in Sources */,
 				2E8C9214202BE39400BC89C2 /* AppDelegate.m in Sources */,
+				1643491D205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m in Sources */,
 				2E8C9253202C2BA000BC89C2 /* XXMainHeaderModel.m in Sources */,
 				2E321250202C5A9700DC0BA5 /* XXApiClients.m in Sources */,
 				2E80AB2E20315F9D008494D2 /* XXMainHeaderView.m in Sources */,

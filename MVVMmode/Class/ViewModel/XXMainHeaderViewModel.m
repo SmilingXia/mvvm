@@ -8,6 +8,7 @@
 
 #import "XXMainHeaderViewModel.h"
 #import "XXMainHeaderModel.h"
+#import "XXLaiFukushimaFunnyPicture.h"
 
 @interface XXMainHeaderViewModel()
 
@@ -17,6 +18,9 @@
 
 - (instancetype)init{
     self = [super init];
+    if (self) {
+        
+    }
     return self;
 }
 

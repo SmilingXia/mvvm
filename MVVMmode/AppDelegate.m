@@ -18,12 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //设置全局缓存策略
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024
+                                                         diskCapacity:20 * 1024 * 1024
+                                                             diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
+    
     self.window                     = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor     = [UIColor whiteColor];
     ViewController *vc              = [[ViewController alloc] init];
     UINavigationController *nav     = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController  = nav;
     [self.window makeKeyAndVisible];
+    
+    
     
     return YES;
 }

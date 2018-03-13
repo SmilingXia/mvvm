@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-//@class XXMainHeaderModel;
-//@class XXMainHeaderBodyOfContentlist;
 #import "XXMainHeaderModel.h"
 
 @interface XXMainHeaderViewModel : NSObject
@@ -43,7 +41,7 @@
 
 
 /**
- *  网络请求数据源
+ *  网络请求数据源 - 笑话
  */
 - (void)getPostMainHeaderViewSource;
 

@@ -33,4 +33,10 @@ typedef void(^ReturnError)(NSString *errorString);
                      andSuccess:(ReturnSuccess)success
                  andErrorString:(ReturnError)errorString;
 
+/**
+ 获取来福岛搞笑图片信息
+ */
+- (void)getFukushimaFunnyPictureSuccess:(ReturnSuccess)success
+                            ErrorString:(ReturnError)errorString;
+
 @end

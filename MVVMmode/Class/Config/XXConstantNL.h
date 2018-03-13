@@ -17,6 +17,7 @@ static NSString * const XX_HOST_URL         =   @"http://route.showapi.com";
 
 static NSString * const XX_XHDQ_URL         =   @"/341-1";          //笑话大全
 static NSString * const XX_CYC_URL          =   @"/151-4";          //猜一猜
+static NSString * const XX_LHD_GXTP_URL     =   @"/107-33";         //来福岛搞笑图片
 
 
 
