@@ -60,7 +60,7 @@ typedef void(^XXBaseCompletionBlock)(NSData * _Nullable data, NSURLResponse * _N
     self.response               = response;
     NSLog(@"请求URL地址 %@",response.URL);
     if(res.statusCode == 200){
-        self.data = [[NSMutableData alloc]init];
+        self.data = [[NSMutableData alloc] init];
         completionHandler(NSURLSessionResponseAllow);
     }
 }

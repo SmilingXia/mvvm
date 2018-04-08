@@ -9,7 +9,6 @@
 #import "XXLaiFuKushimaShowImageVC.h"
 #import "XXLaiFuShowImageViewModel.h"
 #import "XXLaiFuShowImageView.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
 
 
 @interface XXLaiFuKushimaShowImageVC ()
@@ -22,6 +21,14 @@
 
 @implementation XXLaiFuKushimaShowImageVC
 
+- (instancetype)initWithShowImageViewModelDataSource:(id)dataSource{
+    self = [super init];
+    if (self) {
+        self.showImageViewModel = [[XXLaiFuShowImageViewModel alloc] initWitdhModel:(XXFunnyPictureBodyList *)dataSource];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -29,34 +36,53 @@
     [self loadUI];
 }
 
+#pragma mark -
+#pragma mark    eventResponse 事件响应
+
+
+
+#pragma mark -
+#pragma mark    ObjectMethod - 方法区
+
 - (void)loadUI{
-    self.showImageView = [[XXLaiFuShowImageView alloc] init];
     [self.view addSubview:self.showImageView];
     [self.showImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(260);
         make.height.mas_equalTo(300);
         make.center.mas_equalTo(0);
     }];
-    self.showImageView.backgroundColor = XXCOLOR(222, 222, 222);
-    self.showImageView.layer.cornerRadius = 5.0;
-    self.showImageView.layer.borderWidth = 0.5;
-    self.showImageView.layer.borderColor = XXCOLOR(199, 199, 199).CGColor;
-    
-    NSString *imageUrlString = self.showImageViewModel.funnyPictureBodyItemModel.thumburl;
-    NSURL *imageUrl = [NSURL URLWithString:imageUrlString];
-    [self.showImageView.imageView setImageWithURL:imageUrl];
-    
-    self.showImageView.titleLabel.text = self.showImageViewModel.funnyPictureBodyItemModel.title;
+    [self setShowImageViewDict];
 }
 
-- (void)setShowImageViewModelDataSource:(id)dataSource{
-    self.showImageViewModel = [[XXLaiFuShowImageViewModel alloc] init];
-    self.showImageViewModel.funnyPictureBodyItemModel = (XXFunnyPictureBodyList *)dataSource;
+- (void)setShowImageViewDict{
+    NSDictionary *dict = [self.showImageViewModel getViewImageUrlAndTitle];
+    
+    [self.showImageView setDataSource:dict];
+    [self.showImageView setTitleLabelText:[dict objectForKey:@"title"]];
+    [self.showImageView setImageViewUrl:[dict objectForKey:@"imageUrl"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+
+#pragma mark -
+#pragma mark    getter/setter
+
+- (XXLaiFuShowImageView *)showImageView{
+    if (_showImageView) {
+        return _showImageView;
+    }
+    _showImageView = [[XXLaiFuShowImageView alloc] init];
+    _showImageView.backgroundColor      = XXCOLOR(222, 222, 222);
+    _showImageView.layer.cornerRadius   = 5.0;
+    _showImageView.layer.borderWidth    = 0.5;
+    _showImageView.clipsToBounds        = YES;
+    _showImageView.layer.borderColor    = XXCOLOR(199, 199, 199).CGColor;
+    _showImageView.isShowLoadImageAnimation = YES;
     
+    return _showImageView;
 }
 
 

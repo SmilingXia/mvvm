@@ -11,27 +11,41 @@
 @interface XXLaiFuShowImageView : UIView
 
 /**
- 图片加载动画
- */
-@property (nonatomic, strong) UIActivityIndicatorView   *activityIndicatorView;
-
-//UIActivityIndicatorView *aiv = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-//[self.imageViewss addSubview:aiv];
-//[aiv mas_makeConstraints:^(MASConstraintMaker *make) {
-//    make.width.height.mas_equalTo(10);
-//    make.center.mas_equalTo(0);
-//}];
-//[aiv startAnimating];
-
-/**
  显示图片
  */
 @property (nonatomic, strong) UIImageView   *imageView;
-
 
 /**
  显示标题
  */
 @property (nonatomic, strong) UILabel   *titleLabel;
+
+/**
+ 是否显示图片加载动画
+ */
+@property (nonatomic, assign) BOOL      isShowLoadImageAnimation;
+
+/**
+ 设置图片地址 - 来显示图片
+
+ @param urlImage 图片url地址
+ */
+- (void)setImageViewUrl:(NSURL *)urlImage;
+
+
+/**
+ 设置文本标题
+
+ @param titleText 标题
+ */
+- (void)setTitleLabelText:(NSString *)titleText;
+
+/**
+ 设置数据源
+
+ @param dataSource 数据源
+ */
+- (void)setDataSource:(NSDictionary *)dataSource;
+
 
 @end

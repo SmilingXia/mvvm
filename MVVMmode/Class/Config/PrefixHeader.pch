@@ -17,11 +17,16 @@
 #import <Foundation/Foundation.h>
 #import <Masonry/Masonry.h>
 #import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import <AFNetworking/UIImage+AFNetworking.h>
 #import "XXConstant.h"
 #import "XXConstantNL.h"
 #import "XXApiClients.h"
 #import <MJExtension/MJExtension.h>
 #import "XXViewCallbackProtocol.h"
+#import "XXImageDownloadCenter.h"
+#import "XXVideoDownloadCenter.h"
+#import "XXDataConversionUtil.h"
 
 #endif
 

@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163C004A2064914700E6BF79 /* XXVideoDownloadCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C00492064914700E6BF79 /* XXVideoDownloadCenter.m */; };
+		163C004D2064D98500E6BF79 /* XXVideoDownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C004C2064D98500E6BF79 /* XXVideoDownloadVC.m */; };
+		163C00502064DB7900E6BF79 /* XXDownloadListViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C004F2064DB7900E6BF79 /* XXDownloadListViewVC.m */; };
 		1643491D205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643491C205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m */; };
 		16434920205282D800DDEE9C /* XXLaiFuKushimaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643491F205282D800DDEE9C /* XXLaiFuKushimaVC.m */; };
 		16434924205288BC00DDEE9C /* XXLaiFuKushimaTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16434923205288BC00DDEE9C /* XXLaiFuKushimaTC.m */; };
+		166D93E02068C76F001089C1 /* XXVideoDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 166D93DF2068C76F001089C1 /* XXVideoDownloadModel.m */; };
+		166D93E42068EC8B001089C1 /* XXDataConversionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 166D93E32068EC8B001089C1 /* XXDataConversionUtil.m */; };
 		167EFAA72057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAA62057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m */; };
 		167EFAAD2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAAC2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m */; };
 		167EFAB02057DED500163215 /* XXLaiFuShowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAAF2057DED500163215 /* XXLaiFuShowImageView.m */; };
 		167EFAB32057DFB700163215 /* XXLaiFuShowImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167EFAB22057DFB700163215 /* XXLaiFuShowImageViewModel.m */; };
+		16800103205A1ABE00B393B8 /* XXImageBrowsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 16800102205A1ABE00B393B8 /* XXImageBrowsing.m */; };
+		168A6E432060B249003A80C0 /* XXDownloadPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A6E422060B249003A80C0 /* XXDownloadPathManager.m */; };
+		168A6E462060D7C3003A80C0 /* XXImageDownloadCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A6E452060D7C3003A80C0 /* XXImageDownloadCenter.m */; };
+		16A0788B205B8FF400BCB51F /* XXShowImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0788A205B8FF400BCB51F /* XXShowImageViewModel.m */; };
+		16EB92962061EB8000A97FC9 /* XXDownloadTaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EB92952061EB8000A97FC9 /* XXDownloadTaskObject.m */; };
+		16EB92992061FE3E00A97FC9 /* XXDownLoadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EB92982061FE3E00A97FC9 /* XXDownLoadModel.m */; };
+		16ED6547206B99F700E980F6 /* XXImageDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED6546206B99F700E980F6 /* XXImageDownloadModel.m */; };
 		2E321250202C5A9700DC0BA5 /* XXApiClients.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E32124F202C5A9700DC0BA5 /* XXApiClients.m */; };
 		2E321253202C62E000DC0BA5 /* XXBaseApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E321251202C62E000DC0BA5 /* XXBaseApiClient.m */; };
 		2E80AB2E20315F9D008494D2 /* XXMainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E80AB2D20315F9D008494D2 /* XXMainHeaderView.m */; };
@@ -48,12 +60,22 @@
 
 /* Begin PBXFileReference section */
 		0AF2856087C0F2F2261D54E3 /* Pods-MVVMmode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMmode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMmode/Pods-MVVMmode.release.xcconfig"; sourceTree = "<group>"; };
+		163C00482064914700E6BF79 /* XXVideoDownloadCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXVideoDownloadCenter.h; sourceTree = "<group>"; };
+		163C00492064914700E6BF79 /* XXVideoDownloadCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXVideoDownloadCenter.m; sourceTree = "<group>"; };
+		163C004B2064D98500E6BF79 /* XXVideoDownloadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXVideoDownloadVC.h; sourceTree = "<group>"; };
+		163C004C2064D98500E6BF79 /* XXVideoDownloadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXVideoDownloadVC.m; sourceTree = "<group>"; };
+		163C004E2064DB7900E6BF79 /* XXDownloadListViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXDownloadListViewVC.h; sourceTree = "<group>"; };
+		163C004F2064DB7900E6BF79 /* XXDownloadListViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXDownloadListViewVC.m; sourceTree = "<group>"; };
 		1643491B205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFukushimaFunnyPicture.h; sourceTree = "<group>"; };
 		1643491C205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFukushimaFunnyPicture.m; sourceTree = "<group>"; };
 		1643491E205282D800DDEE9C /* XXLaiFuKushimaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaVC.h; sourceTree = "<group>"; };
 		1643491F205282D800DDEE9C /* XXLaiFuKushimaVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaVC.m; sourceTree = "<group>"; };
 		16434922205288BC00DDEE9C /* XXLaiFuKushimaTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaTC.h; sourceTree = "<group>"; };
 		16434923205288BC00DDEE9C /* XXLaiFuKushimaTC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaTC.m; sourceTree = "<group>"; };
+		166D93DE2068C76F001089C1 /* XXVideoDownloadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXVideoDownloadModel.h; sourceTree = "<group>"; };
+		166D93DF2068C76F001089C1 /* XXVideoDownloadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXVideoDownloadModel.m; sourceTree = "<group>"; };
+		166D93E22068EC8B001089C1 /* XXDataConversionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXDataConversionUtil.h; sourceTree = "<group>"; };
+		166D93E32068EC8B001089C1 /* XXDataConversionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXDataConversionUtil.m; sourceTree = "<group>"; };
 		167EFAA52057A5BE00163215 /* XXLaiFuKushimaTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaTableViewModel.h; sourceTree = "<group>"; };
 		167EFAA62057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuKushimaTableViewModel.m; sourceTree = "<group>"; };
 		167EFAAB2057DE3300163215 /* XXLaiFuKushimaShowImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuKushimaShowImageVC.h; sourceTree = "<group>"; };
@@ -63,6 +85,20 @@
 		167EFAB12057DFB700163215 /* XXLaiFuShowImageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXLaiFuShowImageViewModel.h; sourceTree = "<group>"; };
 		167EFAB22057DFB700163215 /* XXLaiFuShowImageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXLaiFuShowImageViewModel.m; sourceTree = "<group>"; };
 		167EFAB52057E42300163215 /* XXViewCallbackProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXViewCallbackProtocol.h; sourceTree = "<group>"; };
+		16800101205A1ABE00B393B8 /* XXImageBrowsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXImageBrowsing.h; sourceTree = "<group>"; };
+		16800102205A1ABE00B393B8 /* XXImageBrowsing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXImageBrowsing.m; sourceTree = "<group>"; };
+		168A6E412060B249003A80C0 /* XXDownloadPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXDownloadPathManager.h; sourceTree = "<group>"; };
+		168A6E422060B249003A80C0 /* XXDownloadPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXDownloadPathManager.m; sourceTree = "<group>"; };
+		168A6E442060D7C3003A80C0 /* XXImageDownloadCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXImageDownloadCenter.h; sourceTree = "<group>"; };
+		168A6E452060D7C3003A80C0 /* XXImageDownloadCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXImageDownloadCenter.m; sourceTree = "<group>"; };
+		16A07889205B8FF400BCB51F /* XXShowImageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXShowImageViewModel.h; sourceTree = "<group>"; };
+		16A0788A205B8FF400BCB51F /* XXShowImageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXShowImageViewModel.m; sourceTree = "<group>"; };
+		16EB92942061EB8000A97FC9 /* XXDownloadTaskObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXDownloadTaskObject.h; sourceTree = "<group>"; };
+		16EB92952061EB8000A97FC9 /* XXDownloadTaskObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXDownloadTaskObject.m; sourceTree = "<group>"; };
+		16EB92972061FE3E00A97FC9 /* XXDownLoadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXDownLoadModel.h; sourceTree = "<group>"; };
+		16EB92982061FE3E00A97FC9 /* XXDownLoadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXDownLoadModel.m; sourceTree = "<group>"; };
+		16ED6545206B99F700E980F6 /* XXImageDownloadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXImageDownloadModel.h; sourceTree = "<group>"; };
+		16ED6546206B99F700E980F6 /* XXImageDownloadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXImageDownloadModel.m; sourceTree = "<group>"; };
 		2E32124E202C5A9700DC0BA5 /* XXApiClients.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXApiClients.h; sourceTree = "<group>"; };
 		2E32124F202C5A9700DC0BA5 /* XXApiClients.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXApiClients.m; sourceTree = "<group>"; };
 		2E321251202C62E000DC0BA5 /* XXBaseApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBaseApiClient.m; sourceTree = "<group>"; };
@@ -138,12 +174,93 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		166D93E12068EC50001089C1 /* 数据进制转换 */ = {
+			isa = PBXGroup;
+			children = (
+				166D93E22068EC8B001089C1 /* XXDataConversionUtil.h */,
+				166D93E32068EC8B001089C1 /* XXDataConversionUtil.m */,
+			);
+			path = "数据进制转换";
+			sourceTree = "<group>";
+		};
+		167CA792206DD2170074F987 /* 数据库表 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "数据库表";
+			sourceTree = "<group>";
+		};
 		167EFAB42057E2C300163215 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				167EFAB52057E42300163215 /* XXViewCallbackProtocol.h */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		168000FF205A1A6300B393B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				167CA792206DD2170074F987 /* 数据库表 */,
+				166D93E12068EC50001089C1 /* 数据进制转换 */,
+				16EB92932061EB5500A97FC9 /* 下载任务 */,
+				168A6E4020609A34003A80C0 /* 图片本地缓存 */,
+				16A07888205B5DD800BCB51F /* 工具栏 */,
+				16A07887205B5DC800BCB51F /* 导航栏 */,
+				16800100205A1A7700B393B8 /* 图片浏览 */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		16800100205A1A7700B393B8 /* 图片浏览 */ = {
+			isa = PBXGroup;
+			children = (
+				16800101205A1ABE00B393B8 /* XXImageBrowsing.h */,
+				16800102205A1ABE00B393B8 /* XXImageBrowsing.m */,
+			);
+			path = "图片浏览";
+			sourceTree = "<group>";
+		};
+		168A6E4020609A34003A80C0 /* 图片本地缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				168A6E412060B249003A80C0 /* XXDownloadPathManager.h */,
+				168A6E422060B249003A80C0 /* XXDownloadPathManager.m */,
+				168A6E442060D7C3003A80C0 /* XXImageDownloadCenter.h */,
+				168A6E452060D7C3003A80C0 /* XXImageDownloadCenter.m */,
+				16ED6545206B99F700E980F6 /* XXImageDownloadModel.h */,
+				16ED6546206B99F700E980F6 /* XXImageDownloadModel.m */,
+			);
+			path = "图片本地缓存";
+			sourceTree = "<group>";
+		};
+		16A07887205B5DC800BCB51F /* 导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "导航栏";
+			sourceTree = "<group>";
+		};
+		16A07888205B5DD800BCB51F /* 工具栏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "工具栏";
+			sourceTree = "<group>";
+		};
+		16EB92932061EB5500A97FC9 /* 下载任务 */ = {
+			isa = PBXGroup;
+			children = (
+				16EB92942061EB8000A97FC9 /* XXDownloadTaskObject.h */,
+				16EB92952061EB8000A97FC9 /* XXDownloadTaskObject.m */,
+				16EB92972061FE3E00A97FC9 /* XXDownLoadModel.h */,
+				16EB92982061FE3E00A97FC9 /* XXDownLoadModel.m */,
+				163C00482064914700E6BF79 /* XXVideoDownloadCenter.h */,
+				163C00492064914700E6BF79 /* XXVideoDownloadCenter.m */,
+				166D93DE2068C76F001089C1 /* XXVideoDownloadModel.h */,
+				166D93DF2068C76F001089C1 /* XXVideoDownloadModel.m */,
+			);
+			path = "下载任务";
 			sourceTree = "<group>";
 		};
 		2E8C9206202BE39400BC89C2 = {
@@ -204,6 +321,7 @@
 		2E8C9244202BE5BC00BC89C2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				168000FF205A1A6300B393B8 /* Utils */,
 				167EFAB42057E2C300163215 /* Delegate */,
 				2E8C924A202BFA7900BC89C2 /* Config */,
 				2E8C9248202BE63D00BC89C2 /* Networking */,
@@ -226,6 +344,10 @@
 				1643491F205282D800DDEE9C /* XXLaiFuKushimaVC.m */,
 				167EFAAB2057DE3300163215 /* XXLaiFuKushimaShowImageVC.h */,
 				167EFAAC2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m */,
+				163C004B2064D98500E6BF79 /* XXVideoDownloadVC.h */,
+				163C004C2064D98500E6BF79 /* XXVideoDownloadVC.m */,
+				163C004E2064DB7900E6BF79 /* XXDownloadListViewVC.h */,
+				163C004F2064DB7900E6BF79 /* XXDownloadListViewVC.m */,
 			);
 			path = ViewConteller;
 			sourceTree = "<group>";
@@ -250,6 +372,8 @@
 				167EFAA62057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m */,
 				167EFAB12057DFB700163215 /* XXLaiFuShowImageViewModel.h */,
 				167EFAB22057DFB700163215 /* XXLaiFuShowImageViewModel.m */,
+				16A07889205B8FF400BCB51F /* XXShowImageViewModel.h */,
+				16A0788A205B8FF400BCB51F /* XXShowImageViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -497,20 +621,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168A6E432060B249003A80C0 /* XXDownloadPathManager.m in Sources */,
 				2E321253202C62E000DC0BA5 /* XXBaseApiClient.m in Sources */,
+				163C004A2064914700E6BF79 /* XXVideoDownloadCenter.m in Sources */,
+				16EB92962061EB8000A97FC9 /* XXDownloadTaskObject.m in Sources */,
 				167EFAB02057DED500163215 /* XXLaiFuShowImageView.m in Sources */,
 				2E8C9217202BE39500BC89C2 /* ViewController.m in Sources */,
 				16434920205282D800DDEE9C /* XXLaiFuKushimaVC.m in Sources */,
 				16434924205288BC00DDEE9C /* XXLaiFuKushimaTC.m in Sources */,
+				168A6E462060D7C3003A80C0 /* XXImageDownloadCenter.m in Sources */,
+				16A0788B205B8FF400BCB51F /* XXShowImageViewModel.m in Sources */,
 				167EFAA72057A5BE00163215 /* XXLaiFuKushimaTableViewModel.m in Sources */,
+				16800103205A1ABE00B393B8 /* XXImageBrowsing.m in Sources */,
+				166D93E42068EC8B001089C1 /* XXDataConversionUtil.m in Sources */,
+				16ED6547206B99F700E980F6 /* XXImageDownloadModel.m in Sources */,
 				2E8C9222202BE39500BC89C2 /* main.m in Sources */,
 				167EFAB32057DFB700163215 /* XXLaiFuShowImageViewModel.m in Sources */,
+				163C004D2064D98500E6BF79 /* XXVideoDownloadVC.m in Sources */,
 				167EFAAD2057DE3300163215 /* XXLaiFuKushimaShowImageVC.m in Sources */,
 				2E8C9214202BE39400BC89C2 /* AppDelegate.m in Sources */,
+				163C00502064DB7900E6BF79 /* XXDownloadListViewVC.m in Sources */,
 				1643491D205271FC00DDEE9C /* XXLaiFukushimaFunnyPicture.m in Sources */,
 				2E8C9253202C2BA000BC89C2 /* XXMainHeaderModel.m in Sources */,
+				16EB92992061FE3E00A97FC9 /* XXDownLoadModel.m in Sources */,
 				2E321250202C5A9700DC0BA5 /* XXApiClients.m in Sources */,
 				2E80AB2E20315F9D008494D2 /* XXMainHeaderView.m in Sources */,
+				166D93E02068C76F001089C1 /* XXVideoDownloadModel.m in Sources */,
 				2E8C9256202C2BBF00BC89C2 /* XXMainHeaderViewModel.m in Sources */,
 				2E8C9250202C223100BC89C2 /* XXMainVC.m in Sources */,
 			);
@@ -656,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76AA814AAB0A932518D5616F /* Pods-MVVMmode.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
@@ -679,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AF2856087C0F2F2261D54E3 /* Pods-MVVMmode.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;

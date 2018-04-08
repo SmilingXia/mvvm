@@ -11,6 +11,12 @@
 @interface XXLaiFuKushimaShowImageVC : UIViewController
 
 
-- (void)setShowImageViewModelDataSource:(id)dataSource;
+/**
+ 初始化设置Model的数据
+
+ @param dataSource XXFunnyPictureBodyList模型数据
+ @return 实例
+ */
+- (instancetype)initWithShowImageViewModelDataSource:(id)dataSource;
 
 @end

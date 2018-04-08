@@ -6,7 +6,8 @@
 //  Copyright © 2018年 cn.xia. All rights reserved.
 //
 
-//网络请求url
+#pragma mark -
+#pragma mark    请求相关 - 网络请求url
 
 static NSString * const XX_APPID_KEY        =   @"showapi_appid";
 static NSString * const XX_APPID_VALUE      =   @"52449";
@@ -46,3 +47,17 @@ static NSString* const CLOUDAPI_PATCH = @"PATCH";
 
 //DELETE
 static NSString* const CLOUDAPI_DELETE = @"DELETE";
+
+
+
+#pragma mark -
+#pragma mark    缓存相关
+
+//图片缓存的plist文件名称
+static NSString* const DOWNLOAD_IMAGE_PILIST_NAME = @"downloadImage.plist";
+
+//视频缓存的plist文件名称
+static NSString* const DOWNLOAD_VIDEO_PILIST_NAME = @"downloadVideo.plist";
+
+
+

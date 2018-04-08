@@ -37,8 +37,8 @@
 
 
 - (void)withValueTransmission:(id)model{
-    XXLaiFuKushimaShowImageVC *vc = [[XXLaiFuKushimaShowImageVC alloc] init];
-    [vc setShowImageViewModelDataSource:model];
+    XXLaiFuKushimaShowImageVC *vc = [[XXLaiFuKushimaShowImageVC alloc] initWithShowImageViewModelDataSource:model];
+    vc.navigationItem.title = @"笑图展示";
     [self.navigationController pushViewController:vc animated:YES];
 }
 

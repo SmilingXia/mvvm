@@ -11,9 +11,16 @@
 
 @interface XXLaiFuShowImageViewModel : NSObject
 
+
+- (instancetype)initWitdhModel:(XXFunnyPictureBodyList *)model;
+
+
 /**
- * 数据模型
+ 组装View显示的图片（imageUrl）标题（title）
+
+ @return 字典
  */
-@property (nonatomic, strong) XXFunnyPictureBodyList   *funnyPictureBodyItemModel;
+- (NSDictionary *)getViewImageUrlAndTitle;
+
 
 @end

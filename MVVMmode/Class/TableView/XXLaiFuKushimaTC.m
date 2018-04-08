@@ -59,7 +59,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:XXLaiFuKushimaCell];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:XXLaiFuKushimaCell];
-        cell.backgroundColor = XXCOLOR(0, 125, 255);
     }
     cell.textLabel.text = [_tableViewModel getFunnyPictureBodyListWithIndex:(int)indexPath.row].title;
     return cell;
@@ -67,6 +66,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%ld",indexPath.row);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     XXFunnyPictureBodyList *funnyPictureBodyList = [_tableViewModel getFunnyPictureBodyListWithIndex:(int)indexPath.row];
     if (self.backDelegate && [self.backDelegate respondsToSelector:@selector(withValueTransmission:)]) {
         [self.backDelegate withValueTransmission:funnyPictureBodyList];
